@@ -57,14 +57,13 @@ void permute(char *a, int l, int r, unsigned long long int *bigsum)
 	}
 }
 
-int main()
+void main()
 {
 	char str[] = "0123456789";
 	int n = strlen(str);
 	unsigned long long int bigsum = 0;
 	permute(str, 0, n - 1, &bigsum);
 	printf("\n%lld", bigsum);
-	return 0;
 }
 
 
